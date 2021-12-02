@@ -10,6 +10,9 @@ void draw() {
 ball.draw();
 }//End draw()
 
-void mousePressed() {}//End mousePressed
+void mousePressed() {
+  ball.setTargetX(mouseX);
+  ball.setTargetY(mouseY);
+}//End mousePressed
 
 void keyPressed() {} //End keyPressed
