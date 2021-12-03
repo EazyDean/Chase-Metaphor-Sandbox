@@ -1,13 +1,13 @@
-//Global Variables et al
-Ball ball;
+//Global Variables et al.
+Ball ball; //Object
 
 void setup() {
-  fullScreen();
-  ball = new Ball(width*1/2, height*1/2, width*1/80);
+  size(500, 600); //fullScree(), displayWidth, displayHeight
+  ball = new Ball(width*1/2, height*1/2, width*1/40); //Constructor (Populates)
 }//End setup()
 
 void draw() {
-ball.draw();
+  ball.draw();
 }//End draw()
 
 void mousePressed() {
@@ -15,4 +15,5 @@ void mousePressed() {
   ball.setTargetY(mouseY);
 }//End mousePressed
 
-void keyPressed() {} //End keyPressed
+void keyPressed() {
+}//End keyPressed
