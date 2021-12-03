@@ -8,9 +8,9 @@ class Star {
   color black=#000000;
   //
   Star(float xParameter, float yParameter, float diameterParameter) {
-    x = xParameter;
-    y = yParameter;
-    diameter = diameterParameter;
+    this.x = xParameter;
+    this.y = yParameter;
+    this.diameter = diameterParameter;
   }//End Ball Constructor
   //
   void draw() {
