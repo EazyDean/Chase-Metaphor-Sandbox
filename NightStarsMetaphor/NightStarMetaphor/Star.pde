@@ -14,7 +14,7 @@ class Star {
   }//End Ball Constructor
   //
   void draw() {
-    background(black);
+    //background(black); //Bug will only draw last star due to layering
     ellipse(x, y, diameter, diameter);
   }//End draw()
   //
