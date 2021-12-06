@@ -4,12 +4,12 @@ Star[] stars = new Star[NumberOfStars]; //Processing Requires #, Pure Java allow
 color black=#000000;
 
 void setup() {
-  size(500, 600);
+  fullScreen();
   //Note: FOR-EACH Loop more appropriate for Arrays and Classes
   for (int i=0; i<stars.length; i++) {
-    float xRandom = random(0, width);
-    float yRandom = random(0, height);
     float diameterRandom = random(width*1/200, width*1/120);
+    float xRandom = random(diameterRandom*1/2, width-diameterRandom*1/2);
+    float yRandom = random(diameterRandom*1/2, height-diameterRandom*1/2);
     stars[i] = new Star(xRandom, yRandom, diameterRandom); //width*1/2, height*1/2,
   }//End FOR Population
   /* Two Bugs to Fix
