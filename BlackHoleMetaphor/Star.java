@@ -1,3 +1,8 @@
+/* Color is not a pure Java option, only Processing-Java
+ requires additional libraries Processing loads always
+ Note: Pure Java is best for text-based and arithmetic
+ */
+//
 class Star {
   //Global Variables, encapsulated
   float x, y, diameter;
