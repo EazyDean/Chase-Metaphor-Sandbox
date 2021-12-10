@@ -1,4 +1,5 @@
 //Global Variables et al
+Boolean startMouse=false, sartKeyboard=true;
 int starNumbers = 100; //Will be a static variable, encapsulated
 Star[] stars = new Star[100];
 
