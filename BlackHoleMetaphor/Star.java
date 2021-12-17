@@ -4,18 +4,33 @@
  */
 //
 class Star {
-  //Global Variables, encapsulated
-  float x, y, diameter;
+  float x, y, diameter, targetX, targetY;
   //
-  // Variable Population
   Star(float xParameter, float yParameter, float diameterParameter) {
-    this.x = xParameter;
-    this.y = yParameter;
-    this.diameter = diameterParameter;
-  }//End Constructor
+    x = xParameter;
+    y = yParameter;
+    diameter = diameterParameter;
+    //targetX&Y must be made beginning values or introduces bug
+    targetX = x;
+    targetY = y;
+  }//End Ball Constructor
   //
-  void draw() {}//End draw()
+  void draw() {
+    step();
+    ellipse(x, y, diameter, diameter);
+  }//End draw()
   //
   void step() {
+    if (x < targetX) {
+      x++;
+    } else {
+      x--;
+    }
+    if (y < targetY) {
+      y++;
+    } else {
+      y--;
+    }
   }//End step()
-}//End Star
+  //
+}//End Ball
