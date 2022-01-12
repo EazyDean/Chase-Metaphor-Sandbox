@@ -17,7 +17,6 @@ class Star {
   //
   void draw() {
     step();
-    ellipse(x, y, diameter, diameter);
   }//End draw()
   //
   void step() {
